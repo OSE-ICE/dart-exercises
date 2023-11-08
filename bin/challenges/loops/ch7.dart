@@ -32,5 +32,17 @@
 import 'dart:io';
 
 void main() {
-
+  bool condition = true;
+  while (condition) {
+    print("Please enter the number 100 or stop to quit!!!...");
+    String? userNumber = stdin.readLineSync();
+    int userNumberConvert = int.tryParse(userNumber ?? "") ?? 0;
+    if (userNumber == "stop") {
+      condition = false;
+    } else if (userNumberConvert == 100) {
+      print("Good work, you can follow instructions!!!!....");
+    } else {
+      print("You entered an invalid number. Please try again.");
+    }
+  }
 }
