@@ -37,6 +37,8 @@ void main() {
     if (birthday!.toLowerCase() == 'yes') {
       int bias = 1770;
       print('Sorry I missed it');
+      int bias2 = bias + step3;
+      print('$step3 + $bias = $bias2');
     } else if (birthday.toLowerCase() == 'no') {
       int bias = 1769;
       print('Am I invited? yes or no');
