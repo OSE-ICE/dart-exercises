@@ -36,7 +36,7 @@ import 'dart:io';
 
 void main() {
   int lapsToComplete = 10;
-  bool isMonday = true;
+  bool isMonday = false;
 
   if (!isMonday) {
     print("It's not monday!.");
